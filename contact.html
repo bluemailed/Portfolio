@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Contact Peetu Rimmi</title>
+<script>
+
+function validateForm()
+{
+ if (document.forms["contactForm"]["name"].value==null || document.forms["myForm"]["name"].value=="")
+
+  {
+   alert("Name must be filled out");
+   return false;
+  }
+
+ if (document.forms["contactForm"]["email"].value==null || document.forms["myForm"]["email"].value=="")
+
+  {
+   alert("E-mail must be filled out");
+   return false;
+  }
+
+ if (document.forms["contactForm"]["message"].value==null || document.forms["myForm"]["message"].value=="")
+
+  {
+   alert("Message must be filled out");
+   return false;
+  }
+
+ return true;
+}
+
+</script>
+</head>
+
+<body>
+
+<div id="contentbg">
+<div id="content">
+
+<h2>Contact Me</h2>
+
+<form name="contactForm" method="post" onsubmit="return validateForm()">
+
+<p>Name:<br />
+<input type="text" name="name"/><br />
+E-mail:<br />
+<input type="email" name="email"/><br />
+Message:<br />
+<textarea name="message" style="width:500px; height:300px;"></textarea></p>
+<p><input type="submit" value="Send" /></p>
+
+</form>
+
+<h2>Art Sites</h2>
+
+<a href="http://pteryon.deviantart.com" target="_blank"><img src="img/deviantart.png" alt="DeviantArt" style="border: 0;"></a><br /><br />
+
+<h2>Art Blog</h2>
+
+<a href="http://www.pteryon.com" target="_blank"><img src="img/tumblr.png" alt="Tumblr" style="border: 0;"></a><br /><br />
+
+<h2>Networking</h2>
+
+<a href="https://www.linkedin.com/pub/peetu-rimmi/9b/95b/672" target="_blank"><img src="img/linkedin.png" alt="LinkedIn" style="border: 0;"></a><br /><br />
+
+</div>
+</div>
+
+<footer>
+
+<nav>
+<a href="profile.html">Profile</a>
+<a href="illustrations.html">Illustrations</a>
+<a href="index.html"><img src="img/emblem.png" alt="Index"></a>
+<a href="gameart.html">Game Art</a>
+<a class="current">Contact</a>
+</nav>
+
+<p>&copy;2015 Peetu Rimmi. All rights reserved.</p>
+
+</footer>
+
+</body>
+
+</html>
